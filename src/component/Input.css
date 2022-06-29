@@ -1,0 +1,42 @@
+.wrapper {
+    margin: 229px auto;
+  }
+  div {
+    position: relative;
+    display: flex;
+    height: 4rem;
+    border: 0;
+    border-radius: 4rem;
+    background: #fff;
+    margin: auto;
+  }
+  span {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    display: grid;
+    place-items: center;
+    height: 3rem;
+    width: 6rem;
+    font-size: 0.875rem;
+    border-radius: inherit;
+    pointer-events: none;
+    transition: all 0.35s;
+    letter-spacing: 1px;
+  }
+  input {
+    flex: 1 1 auto;
+    border-radius: 10px;
+    background: transparent;
+    text-indent: 0.625rem;
+    transition: all 0.35s;
+  }
+  input::placeholder {
+    color: #9b9ba5;
+  }
+  input:focus {
+    transform: translateX(6rem);
+  }
+  input:focus ~ span {
+    transform: translateX(-2rem);
+  }
