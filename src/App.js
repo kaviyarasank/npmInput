@@ -4,7 +4,20 @@ import Input from './component/Input';
 function App() {
   return (
     <div className="App">
-       <Input />
+     <Input 
+
+spanBackground="red" 
+
+sapnName="UserName" 
+
+spanColor="white" 
+
+width="400px" 
+
+placeholder="enter Name" 
+
+fontSize="20px"
+/>
     </div>
   );
 }
